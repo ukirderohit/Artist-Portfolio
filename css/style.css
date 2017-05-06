@@ -454,3 +454,87 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 /*font-family: 'Raleway', sans-serif;*/
+
+
+/*Nav Bar*/
+nav.navbar{
+ background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #3a3a3a, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #3a3a3a, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 50px;
+margin-bottom: -50px;
+padding :0;
+}
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding:0;
+}
+
+.navbar-left{
+  margin-left: 150px;
+}
+.navbar-right{
+  margin-right: 150px;
+}
+
+.navbar-toggle {
+    z-index:1;
+}
+.navbar-brand>img{
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #2696a1
+  
+}
+
+
+/*Intro*/
+
+
+.main-header {
+    padding-top: 170px;
+    height: 700px;
+    background-position: 50% 80%;
+    background: linear-gradient(#fff,transparent 90%),
+                linear-gradient(0deg, #2696a1,transparent),
+                #ffa949 url('../media/basson.jpg') no-repeat center/cover;
+    box-sizing: border-box;
+}
+
+
+/*Media Queries*/
+@media (min-width: 768px) and (max-width: 1064px) {
+  .navbar-left,.navbar-right{
+    margin: 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand{
+    text-align: left;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-left,.navbar-right{
+    margin: 0;
+  }
+  .main-header{
+        max-height: 380px;
+        padding: 50px 25px 0;
+    }
+}
+
