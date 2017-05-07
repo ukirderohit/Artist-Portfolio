@@ -516,16 +516,6 @@ padding :0;
                 #ffa949 url('../media/basson.jpg') no-repeat center/cover;
     box-sizing: border-box;
 }
-/*
-.whitebox{
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, .2);
-  border-top-left-radius: 30px;
-  padding: 3em 1em;
-  box-shadow: 10px 10px 3px rgba(0,0,0,0.2);
-}*/
 
 .blue-color{
   color: #175c63;
@@ -540,7 +530,8 @@ padding :0;
 }
 
 span.name{
-  line-height: 2.1em;
+  display: none;
+  /*line-height: 2.1em;*/
 }
 .whitebox{
   animation-delay: .35s;
@@ -549,6 +540,17 @@ span.name{
 text-align: center;
 
 }
+
+/*Object svg*/
+object#my-svg {
+  width: 50%;
+  height: 50%;
+}
+object#breaker{
+  width: 20%;
+  height: 20%;
+}
+
 
 /*dOWN aRROW*/
 .arrows {
@@ -762,14 +764,41 @@ xpush
 }
 
 
-/*Media Queries*/
+/*********************************************************************
+Media Queries
+************************************************************************/
 @media (min-width: 768px) and (max-width: 1064px) {
   /*Navbar*/
   .navbar-left,.navbar-right{
     margin: 0 40px;
   }
+  /*Intro*/
+
+  .main-header {
+    padding-top: 120px;
+    height: 450px;}
+
+  .main-header h1{
+    font-size: 1.7em;
+    line-height: 1.2;
+  }
+  .cd-intro span{
+    /*font-size: 1em;*/
+    line-height: 1.3;
+  }
+  /*Object svg*/
+  object#my-svg {
+  width: 50%;
+  height: 40%;
+  }
+  object#breaker{
+    width: 20%;
+    height: 18%;
+  }
+
 }
-@media (max-width: 767px) {
+
+@media(min-width: 462px) and (max-width: 767px) {
   /*Navbar*/
   .navbar-brand{
     text-align: left;
@@ -777,20 +806,69 @@ xpush
   .navbar-nav {
     text-align: center;
   }
-  .navbar-left,.navbar-right{
-    margin: 0;
+  .navbar-brand img{
+    width: 150px;
+  }
+  .navbar-header{
+    margin: 0 30px;
   }
 /*Intro*/
   .main-header{
         max-height: 380px;
-        padding: 50px 25px 0;
+        padding: 100px 25px 0;     
     }
-     .title{
-        font-size: 1.3rem;
-        border: none;
-    }
-    .arrow{
-        display: none;
-    }
-}
 
+  .main-header h1{
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  #mainsvg .name{
+    display: inline-block;
+    font-size: 1.4em;
+  }
+  /*Object svg*/
+  object#my-svg {
+ display: none;
+  }
+  object#breaker{
+    width: 20%;
+    height: 18%;
+  }
+
+}
+@media (max-width: 461px) {
+  .navbar-brand{
+    text-align: left;
+  }
+  .navbar-brand img{
+    width: 100px;
+  }
+   .navbar-header{
+    margin: 0 15px;
+  }
+/*Intro*/
+  .main-header{
+        max-height: 300px;
+        padding: 80px 25px 0;     
+    }
+
+  .main-header h1{
+    font-size: 1.1em;
+  }
+  #mainsvg .name{
+    display: inline-block;
+    font-size: 1.3em;
+  }
+  /*Object svg*/
+  object#my-svg {
+ display: none;
+  }
+  object#breaker{
+    width: 50%;
+    height: 18%;
+  }
+
+  }
+
+/*************************************************************************
+**************************************************************************/
