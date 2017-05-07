@@ -452,7 +452,7 @@ MAIN CSS
 *************************************************************************/
 
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela Round', 'Raleway', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     
 }
 /*font-family: 'Raleway', sans-serif;*/
@@ -508,7 +508,7 @@ padding :0;
 
 .main-header {
     padding-top: 150px;
-    height: 450px;
+    height: 550px;
     text-align: center;
     background-position: 50% 80%;
     background: linear-gradient(#fff,transparent 90%),
@@ -539,6 +539,17 @@ padding :0;
     cursor: pointer;
 }
 
+span.name{
+  line-height: 2.1em;
+}
+.whitebox{
+  animation-delay: .35s;
+}
+.line-brk {
+text-align: center;
+
+}
+
 /*dOWN aRROW*/
 .arrows {
 	width: 60px;
@@ -546,7 +557,7 @@ padding :0;
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: 20px;
+	bottom: 5px;
 }
 
 .arrows path {
@@ -587,6 +598,9 @@ padding :0;
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+
+
+/*about*/
 
 
 /* -------------------------------- 

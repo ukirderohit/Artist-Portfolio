@@ -1,3 +1,30 @@
+/*Arrows*/
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.arrows').fadeOut();
+     }
+    else
+     {
+      $('.arrows').fadeIn();
+     }
+ });
+
+/*Animate header*/
+$('.whitebox').addClass('animated fadeIn');
+
+/*Vivus JS*/
+var letter = new Vivus('my-svg', {type:'oneByOne' , duration: 500}, function() {
+   
+  
+  letter.reset();
+letter.play();
+
+    });
+
+
+/**/ 
 jQuery(document).ready(function($){
 	//set animation timing
 	var animationDelay = 2500,
