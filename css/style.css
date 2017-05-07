@@ -853,7 +853,7 @@ Media Queries
     }
 
   .main-header h1{
-    font-size: 1.1em;
+    font-size: 1em;
   }
   #mainsvg .name{
     display: inline-block;
