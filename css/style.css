@@ -508,7 +508,7 @@ padding :0;
 
 .main-header {
     padding-top: 150px;
-    height: 550px;
+    height: 720px;
     text-align: center;
     background-position: 50% 80%;
     background: linear-gradient(#fff,transparent 90%),
@@ -560,6 +560,7 @@ object#breaker{
 	left: 50%;
 	margin-left: -30px;
 	bottom: 5px;
+  z-index: 5;
 }
 
 .arrows path {
@@ -764,6 +765,128 @@ xpush
 }
 
 
+/*************************************************************************
+Headline
+**************************************************************************/
+
+
+.headline{
+  position: relative;
+  margin: 80px 0;
+}
+
+.headline::before{
+  content:"";
+  background: #f7941e;
+  width: 580px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.headline h1{
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 3;
+}
+
+.headline h1.inverse{
+  color: #fff;
+  font-size: 3.5em;
+}
+  
+/*==================================================
+About Section
+==================================================*/
+  
+#about{
+  background: url("../media/about.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+ #about .headline h1::before{
+  content: "ABOUT";
+  color: #f1f2f2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -60px;
+  font-size: 150px;
+  z-index: -1;
+}
+
+
+
+/**/
+
+
+/*Positioning Parallax Elements*/
+ul.element-scroll-parallax{
+  margin:0;
+}
+
+ul.element-scroll-parallax li{
+  list-style: none;
+  position: absolute;
+  z-index:5;
+}
+
+
+#about ul.element-scroll-parallax li:nth-child(1){
+  top: 170%;
+  right: 52%;
+  bottom: 10%;
+}
+
+#about ul.element-scroll-parallax li:nth-child(2){
+  top: 170%;
+  right: 44%;
+  bottom: 10%;
+}
+
+#about ul.element-scroll-parallax li:nth-child(3){
+  top: 170%;
+  left: 44%;
+  bottom: 10%;
+}
+
+#about ul.element-scroll-parallax li:nth-child(4){
+  top: 170%;
+  left: 52%;
+  bottom: 10%;
+}
+
+/*==================================================
+photo about 
+==================================================*/
+.about-me{
+  width: 60%;
+  float: right;
+}
+.about-img{
+  width: 40%;
+  float: left;
+}
+.my-photo .img-wrapper{
+  transform: rotate(45deg);
+  display: inline-block;
+  overflow: hidden;
+  /*margin-top: -300px;*/
+}
+.my-photo .img-wrapper img{
+  transform: scale(1.5) rotate(-45deg);
+  max-width: 50%;
+}
 /*********************************************************************
 Media Queries
 ************************************************************************/
@@ -795,7 +918,29 @@ Media Queries
     width: 20%;
     height: 18%;
   }
+  /*about img*/
+  .about-img{
+    margin-top: 50px;
+  }
+  /*about mountains*/
+  
+#about ul.element-scroll-parallax li:nth-child(1){
+  top: 140%;
+  
+}
 
+#about ul.element-scroll-parallax li:nth-child(2){
+  top: 130%;
+  
+}
+
+#about ul.element-scroll-parallax li:nth-child(3){
+  top: 120%;
+  }
+
+#about ul.element-scroll-parallax li:nth-child(4){
+  top: 140%;
+  }
 }
 
 @media(min-width: 462px) and (max-width: 767px) {
@@ -834,7 +979,35 @@ Media Queries
     width: 20%;
     height: 18%;
   }
-
+  /*Headline*/
+  .headline::before{content: none;}
+  .headline h1{font-size: 1.4em;}
+  .headline h1::before{content: none !important};
+  /*about*/
+  #about{
+    display: flex;
+    background-image: none;
+  }
+  .about-img{
+    float: none;
+    width: 100%;
+     /*padding: 90px;*/
+  }
+  .about-me{
+    float: none;
+    width: 100%;
+  }
+  .my-photo .img-wrapper{
+  transform: none;
+  display: block;
+  overflow: none;
+  /*margin-top: -300px;*/
+}
+.my-photo .img-wrapper img{
+  transform: none;
+  max-width: 100%;
+  padding: 10px;
+}
 }
 @media (max-width: 461px) {
   .navbar-brand{
@@ -867,8 +1040,33 @@ Media Queries
     width: 50%;
     height: 18%;
   }
-
+  /*Headline*/
+  .headline::before{content: none;}
+  .headline h1{font-size: 1.4em;}
+  .headline h1::before{content: none !important};
+ /*about*/
+  #about{
+    display: flex;
+    background-image: none;
   }
-
-/*************************************************************************
-**************************************************************************/
+  .about-img{
+    float: none;
+    width: 100%;
+     /*padding: 90px;*/
+  }
+  .about-me{
+    float: none;
+    width: 100%;
+  }
+  .my-photo .img-wrapper{
+  transform: none;
+  display: block;
+  overflow: none;
+  /*margin-top: -300px;*/
+}
+.my-photo .img-wrapper img{
+  transform: none;
+  max-width: 100%;
+  padding: 10px;
+}
+  }
