@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
-*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -843,25 +843,25 @@ ul.element-scroll-parallax li{
 
 
 #about ul.element-scroll-parallax li:nth-child(1){
-  top: 170%;
+  top: 150%;
   right: 52%;
   bottom: 10%;
 }
 
 #about ul.element-scroll-parallax li:nth-child(2){
-  top: 170%;
+  top: 140%;
   right: 44%;
   bottom: 10%;
 }
 
 #about ul.element-scroll-parallax li:nth-child(3){
-  top: 170%;
+  top: 160%;
   left: 44%;
   bottom: 10%;
 }
 
 #about ul.element-scroll-parallax li:nth-child(4){
-  top: 170%;
+  top: 130%;
   left: 52%;
   bottom: 10%;
 }
@@ -869,6 +869,8 @@ ul.element-scroll-parallax li{
 /*==================================================
 photo about 
 ==================================================*/
+
+
 .about-me{
   width: 60%;
   float: right;
@@ -887,6 +889,7 @@ photo about
   transform: scale(1.5) rotate(-45deg);
   max-width: 50%;
 }
+
 /*********************************************************************
 Media Queries
 ************************************************************************/
@@ -925,21 +928,21 @@ Media Queries
   /*about mountains*/
   
 #about ul.element-scroll-parallax li:nth-child(1){
-  top: 140%;
-  
-}
-
-#about ul.element-scroll-parallax li:nth-child(2){
   top: 130%;
   
 }
 
-#about ul.element-scroll-parallax li:nth-child(3){
+#about ul.element-scroll-parallax li:nth-child(2){
   top: 120%;
+  
+}
+
+#about ul.element-scroll-parallax li:nth-child(3){
+  top: 110%;
   }
 
 #about ul.element-scroll-parallax li:nth-child(4){
-  top: 140%;
+  top: 130%;
   }
 }
 
@@ -979,19 +982,18 @@ Media Queries
     width: 20%;
     height: 18%;
   }
-  /*Headline*/
-  .headline::before{content: none;}
-  .headline h1{font-size: 1.4em;}
-  .headline h1::before{content: none !important};
   /*about*/
   #about{
+    padding: 0;
     display: flex;
-    background-image: none;
-  }
+    }
+  
   .about-img{
-    float: none;
-    width: 100%;
-     /*padding: 90px;*/
+    float: left;
+    /*width: 100%;*/
+    margin: 0 auto;
+    margin: 0 30px 10px 10px;
+    box-shadow: -14px -10px 22px -3px rgba(58,58,58,0.25);
   }
   .about-me{
     float: none;
@@ -1001,13 +1003,28 @@ Media Queries
   transform: none;
   display: block;
   overflow: none;
-  /*margin-top: -300px;*/
 }
 .my-photo .img-wrapper img{
   transform: none;
   max-width: 100%;
   padding: 10px;
 }
+  /*Headline*/
+  .headline{
+    margin: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #353535;
+    letter-spacing: 1.3px;
+    background: url(../media/h1-bg.png) no-repeat center bottom;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  .headline::before{content: none;}
+  .headline h1{font-size: 1.4em;position: relative;line-height: 1.2;font-weight: bolder;margin: 0;}
+  .headline h1::before{content: none !important};
+  
+  
 }
 @media (max-width: 461px) {
   .navbar-brand{
@@ -1042,17 +1059,21 @@ Media Queries
   }
   /*Headline*/
   .headline::before{content: none;}
-  .headline h1{font-size: 1.4em;}
+  .headline h1{font-size: 1.4em;position: relative;line-height: 1.2;font-weight: bolder;margin: 0;}
   .headline h1::before{content: none !important};
  /*about*/
+  /*about*/
   #about{
+    padding: 0;
     display: flex;
-    background-image: none;
-  }
+    }
+  
   .about-img{
     float: none;
-    width: 100%;
-     /*padding: 90px;*/
+    width: 60%;
+    margin: 0 auto;
+    /*margin: 0 30px 10px 10px;*/box-shadow: -3px 4px 11px 16px rgba(58,58,58,0.08);
+    margin-bottom: 20px;
   }
   .about-me{
     float: none;
@@ -1062,11 +1083,24 @@ Media Queries
   transform: none;
   display: block;
   overflow: none;
-  /*margin-top: -300px;*/
 }
 .my-photo .img-wrapper img{
   transform: none;
   max-width: 100%;
   padding: 10px;
 }
+  /*Headline*/
+  .headline{
+    margin: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #353535;
+    letter-spacing: 1.3px;
+    background: url(../media/h1-bg.png) no-repeat center bottom;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  .headline::before{content: none;}
+  .headline h1{font-size: 1.4em;position: relative;line-height: 1.2;font-weight: bolder;margin: 0;}
+  .headline h1::before{content: none !important};
   }
