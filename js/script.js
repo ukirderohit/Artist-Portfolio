@@ -23,6 +23,7 @@ letter.play();
 
     });
 
+/*timeline*/
 
 /**/ 
 jQuery(document).ready(function($){
@@ -91,3 +92,4 @@ jQuery(document).ready(function($){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
 });
+
